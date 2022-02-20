@@ -17,8 +17,7 @@ namespace Zadanie2.Controllers
         {                      
             return View();
         }
-        //  var Metoda = Request.Method;
-        //var czas = (DateTime)HttpContext.Items["RequestTimestamp"];
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Details details)
