@@ -1,0 +1,18 @@
+﻿@model Zadanie2.Models.Details
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Strona główna</h1>
+
+<hr />
+
+
+<div>
+    <a  class="btn alert-info w-30" asp-controller="Details" asp-action="Create">Dodaj Nip</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
